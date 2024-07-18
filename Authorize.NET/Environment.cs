@@ -118,7 +118,9 @@ namespace AuthorizeNet
             return value;
         }
 
+#if false
         private static object mutex = new object();
+#endif
 
         /// <summary>
         /// Reads the value from property file and/or the environment 
@@ -130,14 +132,17 @@ namespace AuthorizeNet
             String stringValue = null;
             String propValue = null;
 
+#if false
             lock(mutex) {
                 if (!string.IsNullOrEmpty(ConfigurationManager.AppSettings.Get(propertyName)))
                 {
                     propValue = ConfigurationManager.AppSettings.Get(propertyName);
                 }
             }
+#endif
 
             var envValue = System.Environment.GetEnvironmentVariable(propertyName);
+            // ReSharper disable once ConditionIsAlwaysTrueOrFalse
             if ( null != propValue && propValue.Trim().Length > 0 )
             {
                 stringValue = propValue;
