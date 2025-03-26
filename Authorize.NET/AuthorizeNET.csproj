@@ -2,7 +2,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<TargetFrameworks>netstandard2.0;net6.0</TargetFrameworks>
-		<Version>2.0.3</Version>
+		<Version>2.0.4</Version>
 		<AssemblyName>AuthorizeNet</AssemblyName>
 		<RootNamespace>AuthorizeNet</RootNamespace>
 		<EnableDefaultCompileItems>false</EnableDefaultCompileItems>
@@ -81,9 +81,6 @@
 		<Compile Include="Util\*.cs" />
 		<Compile Include="Utility\AnetApiSchema.generated.cs" />
 		<Compile Include="Utility\ApiFields.cs" />
-	</ItemGroup>
-	<ItemGroup>
-		<Folder Include="Properties\" />
 	</ItemGroup>
 	<ItemGroup>
 		<None Include="Api\ControllerTemplate.cst" />
