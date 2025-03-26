@@ -83,9 +83,6 @@
 		<Compile Include="Utility\ApiFields.cs" />
 	</ItemGroup>
 	<ItemGroup>
-		<Folder Include="Properties\" />
-	</ItemGroup>
-	<ItemGroup>
 		<None Include="Api\ControllerTemplate.cst" />
 	</ItemGroup>
 	<ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
